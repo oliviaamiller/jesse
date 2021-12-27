@@ -10,13 +10,33 @@ html, body {
     background-color: rgb(242, 249, 255);
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+
+  .jesse {
+      float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111
+  }
 
 .content {
     display: flex;
@@ -24,4 +44,12 @@ html, body {
     flex-wrap: wrap;
     align-items: center;
     padding-top: 200px;
+    width: 100%;
+}
+
+hr {
+    width: 80%;
+    background-color: rgb(75, 75, 91);
+    border: none;
+    height: 5px;
 }
