@@ -7,19 +7,32 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: rgb(242, 249, 255);
+    background-color: rgb(245, 245, 245);
+}
+
+@keyframes pulse {
+    0% {
+        color: rgb(255, 148, 198);
+    }
+    50% {
+        color: rgb(255, 226, 112);
+    }
+    100% {
+        color: rgb(140, 221, 255);
+    }
+
 }
 
 .nav {
     position: fixed;
     width: 100%;
-    background-color: rgb(242, 249, 255);
+    background-color: rgb(242, 245, 245);
     font-family: sans-serif;
     text-transform: uppercase;
     font-size: 25px;
     font-weight: bold;
     vertical-align: text-bottom;
-    padding-top: 20px;
+    padding: 20px 30px 0px 30px;
     margin: 0;
 }
 
@@ -78,15 +91,11 @@ hr {
     margin: 0;
 }
 
-@keyframes pulse {
-    0% {
-        color: rgb(255, 148, 198);
-    }
-    50% {
-        color: rgb(255, 226, 112);
-    }
-    100% {
-        color: rgb(140, 221, 255);
-    }
-
+.content {
+    color:rgb(75, 75, 91);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 30px 10px 30px;
 }
