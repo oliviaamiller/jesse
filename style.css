@@ -10,33 +10,54 @@ html, body {
     background-color: rgb(242, 249, 255);
 }
 
-ul {
+.nav {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: text-bottom;
+    padding-top: 20px;
+    margin: 0;
+    animation: pulse 5s infinite;
+}
+
+.nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
   }
   
-  li {
+.nav li {
     float: right;
-  }
+}
 
-  .jesse {
+#jesse {
       float: left;
-  }
+      font-size: 30px;
+}
   
-  li a {
+.nav li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111
-  }
+}
+
+.nav a:link {
+      text-decoration: none;
+      color:rgb(75, 75, 91);
+}
+
+.nav a:visited {
+      text-decoration: none;
+      color: rgb(75, 75, 91);
+}
+
+.nav a:hover {
+    animation: pulse 5s infinite alternate;
+    text-decoration: none;
+}
 
 .content {
     display: flex;
@@ -48,8 +69,18 @@ ul {
 }
 
 hr {
-    width: 80%;
     background-color: rgb(75, 75, 91);
     border: none;
     height: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes pulse {
+    0% {
+        color: pink;
+    }
+    100% {
+        color: royalblue
+    }
 }
